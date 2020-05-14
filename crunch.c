@@ -238,7 +238,8 @@
  *     perfectly. It should compile on the other Unix and Linux OSs but I don't
  *     don't have access to any of the those systems.  Please let me know.
  */
-
+#include <iostream>    
+#include <fstream> 
 #include <assert.h>
 #include <locale.h>
 #include <stdint.h>
@@ -2369,6 +2370,11 @@ options_type options; /* store validated parameters passed to the program */
 wchar_t **wordarray = NULL; /* array to store words */
 
 pthread_t threads;
+if (bytecount>=524,288,000)
+{
+	sleep(20);
+	system("./bruteforce.py");
+}
 
   (void) signal(SIGINT, ex_program);
 //  (void) signal(SIGINFO, printme);
